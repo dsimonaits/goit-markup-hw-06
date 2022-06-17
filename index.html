@@ -409,13 +409,12 @@
                 </ul>
             </div>
 
-            <div class="email-form-container">
-                <h2 class="email-input-title">Подпишитесь на рассылку</h2>
-                <form action="" class="email-form">
-                    <label>
-                        <input type="email" class="email-input" name="e-mail" placeholder="E-mail">
-                    </label>
-                    <button type="submit" class="email-submit-button">Подписаться
+            <div class="footer-email-form-container">
+                <p class="footer-email-input-title">Подпишитесь на рассылку</p>
+                <form class="footer-email-form">
+                    <label for="footer-e-mail" class="footer-email-field"></label>
+                    <input type="email" class="footer-email-input" name="e-mail" id="footer-e-mail" placeholder="E-mail">
+                    <button type="submit" class="footer-email-submit-button" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">Подписаться
                         <svg class="icon icon-send" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -433,6 +432,12 @@
             </svg>
             </button>
         </div>
+        <form class="modal-contact-form">
+            <label class="modal-cntact-field">
+                <input type="text" name="user_name" class="modal-contact-input">
+            </label>
+
+        </form>
     </div>
 
 
