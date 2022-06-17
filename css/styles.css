@@ -981,6 +981,8 @@ img {
 }
 
 .modal-contact-field-policy-checkbox:checked + .modal-contact-field-policy:before {
+  background-size: contain;
+  background-position: center;
   background-image: url(../images/icon-check.svg);
   background-color: var(--accent-color);
   border-color: var(--accent-color);
