@@ -63,7 +63,7 @@
     <!--Особенности-->
         <section class="section">
             <div class="container our-advantages">
-                <h2 class="main-titel advantages-main-title">Наши особенности</h2>
+                <h2 class="main-titel advantages-main-title visuali-hidden">Наши особенности</h2>
                 <ul class="list advantages-list">
                     <li class="item advantages-item">
                     <div class="advantages-box">
@@ -413,8 +413,8 @@
                 <p class="footer-email-input-title">Подпишитесь на рассылку</p>
                 <form class="footer-email-form">
                     <label for="footer-e-mail" class="footer-email-field"></label>
-                    <input type="email" class="footer-email-input" name="e-mail" id="footer-e-mail" placeholder="E-mail">
-                    <button type="submit" class="footer-email-submit-button" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">Подписаться
+                    <input type="email" class="footer-email-input" name="e-mail" id="footer-e-mail" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <button type="submit" class="footer-email-submit-button">Подписаться
                         <svg class="icon icon-send" width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -424,7 +424,7 @@
         </div>
     </footer>
 
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close>
             <svg class="close-icon" width="18px" height="18px">
@@ -447,7 +447,7 @@
                 <label class="modal-contact-field"></label>
                 <span class="modal-contact-field-type">Телефон</span>
                 <span class="modal-contact-field-wrapper">
-                    <input type="tel" name="tel_number" class="modal-contact-input" pattern="[0-9]*" required>
+                    <input type="tel" name="user_tel_number" class="modal-contact-input" pattern="[0-9]*" required>
                     <svg class="modal-contact-input-icon tel" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
@@ -457,16 +457,22 @@
                 <label class="modal-contact-field"></label>
                 <span class="modal-contact-field-type">Почта</span>
                 <span class="modal-contact-field-wrapper">
-                    <input type="email" name="email" class="modal-contact-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <input type="email" name="user_email" class="modal-contact-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                     <svg class="modal-contact-input-icon mail" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                 </span>
                 </label>
 
-                
+                <label class="modal-contact-field">
+                    <span class="modal-contact-field-type" >Комментарий</span>
+                </label>
+                    <textarea class="modal-contact-message" name="user_message" placeholder="Введите текст"></textarea>
 
-                <button type="submit" class="modal-contact-form-button" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">Отправить</button>  
+                <input type="checkbox" class="modal-contact-field-policy-checkbox visuali-hidden" name="user_policy_agreement" id="user_policy" required>
+                <label for="user_policy" class="modal-contact-field-policy">Соглашаюсь с рассылкой и принимаю <a class="terms-of-an-agreement" href="">Условия договора</a></label>
+
+                <button type="submit" class="modal-contact-form-button">Отправить</button>  
         </form>
         </div>
     </div>
