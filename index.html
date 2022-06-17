@@ -424,20 +424,29 @@
         </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button class="modal-close-button" type="button" data-modal-close>
             <svg class="close-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
             </button>
-        </div>
-        <form class="modal-contact-form">
-            <label class="modal-cntact-field">
-                <input type="text" name="user_name" class="modal-contact-input">
-            </label>
+            
+            <form class="modal-contact-form">
+                <b class="modal-contact-form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <label class="modal-contact-field">
+                <span class="modal-contact-field-type">Имя</span>
+                <span class="modal-contact-field-wrapper">
+                    <input type="text" name="user_name" class="modal-contact-input">
+                    <svg class="modal-contact-input-icon person" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </span>
+                
+                </label>
 
         </form>
+        </div>
     </div>
 
 
