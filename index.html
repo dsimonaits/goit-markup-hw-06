@@ -437,14 +437,36 @@
                 <label class="modal-contact-field">
                 <span class="modal-contact-field-type">Имя</span>
                 <span class="modal-contact-field-wrapper">
-                    <input type="text" name="user_name" class="modal-contact-input">
+                    <input type="text" name="user_name" class="modal-contact-input" required>
                     <svg class="modal-contact-input-icon person" width="18px" height="18px">
                         <use href="./images/icons.svg#icon-person"></use>
                     </svg>
                 </span>
-                
                 </label>
 
+                <label class="modal-contact-field"></label>
+                <span class="modal-contact-field-type">Телефон</span>
+                <span class="modal-contact-field-wrapper">
+                    <input type="tel" name="tel_number" class="modal-contact-input" pattern="[0-9]*" required>
+                    <svg class="modal-contact-input-icon tel" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </span>
+                </label>
+
+                <label class="modal-contact-field"></label>
+                <span class="modal-contact-field-type">Почта</span>
+                <span class="modal-contact-field-wrapper">
+                    <input type="email" name="email" class="modal-contact-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <svg class="modal-contact-input-icon mail" width="18px" height="18px">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </span>
+                </label>
+
+                
+
+                <button type="submit" class="modal-contact-form-button" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">Отправить</button>  
         </form>
         </div>
     </div>
