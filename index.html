@@ -363,7 +363,7 @@
     <footer class="footer">
         <div class="container">
             <address class="footer-address">
-            <a class="footer-logo" href="./index.html">Web<span class="footer-logo span">Studio</span></a>
+            
                 <ul class="address list">
                     <li class="item-address">
                         <a href="https://goo.gl/maps/AirsbdC57sYQPZAz8" target="_blank" rel="noopener noreferrer"
@@ -434,40 +434,53 @@
             
             <form class="modal-contact-form">
                 <b class="modal-contact-form-title">Оставьте свои данные, мы вам перезвоним</b>
-                <label class="modal-contact-field">
-                    <span class="modal-contact-field-type">Имя</span>
-                    <span class="modal-contact-field-wrapper">
-                        <input type="text" name="user_name" class="modal-contact-input" required autofocus>
-                        <svg class="modal-contact-input-icon person" width="18px" height="18px">
-                            <use href="./images/icons.svg#icon-person"></use>
-                        </svg>
-                    </span>
-                </label>
+                
+                <ul class="modal-contact-form-list">
+                    <li class="modal-contact-form-list-item">
+                        <label class="modal-contact-field">
+                            <span class="modal-contact-field-type">Имя</span>
+                            <span class="modal-contact-field-wrapper">
+                                <input type="text" name="user_name" class="modal-contact-input" required autofocus>
+                                <svg class="modal-contact-input-icon person" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-person"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </li>
+             
+                    <li class="modal-contact-form-list-item">
+                        <label class="modal-contact-field">
+                            <span class="modal-contact-field-type">Телефон</span>
+                            <span class="modal-contact-field-wrapper">
+                                <input type="tel" name="user_tel_number" class="modal-contact-input" pattern="[0-9]*" required>
+                                <svg class="modal-contact-input-icon tel" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </li>
 
-                <label class="modal-contact-field">
-                    <span class="modal-contact-field-type">Телефон</span>
-                    <span class="modal-contact-field-wrapper">
-                        <input type="tel" name="user_tel_number" class="modal-contact-input" pattern="[0-9]*" required>
-                        <svg class="modal-contact-input-icon tel" width="18px" height="18px">
-                            <use href="./images/icons.svg#icon-phone"></use>
-                        </svg>
-                    </span>
-                </label>
+                    <li class="modal-contact-form-list-item">
+                        <label class="modal-contact-field">
+                            <span class="modal-contact-field-type">Почта</span>
+                            <span class="modal-contact-field-wrapper">
+                                <input type="email" name="user_email" class="modal-contact-input"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                                <svg class="modal-contact-input-icon mail" width="18px" height="18px">
+                                    <use href="./images/icons.svg#icon-email"></use>
+                                </svg>
+                            </span>
+                        </label>
+                    </li>
 
-                <label class="modal-contact-field">
-                    <span class="modal-contact-field-type">Почта</span>
-                    <span class="modal-contact-field-wrapper">
-                        <input type="email" name="user_email" class="modal-contact-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                        <svg class="modal-contact-input-icon mail" width="18px" height="18px">
-                            <use href="./images/icons.svg#icon-email"></use>
-                        </svg>
-                    </span>
-                </label>
+                    <li class="modal-contact-form-list-item">
+                        <label class="modal-contact-field">
+                            <span class="modal-contact-field-type">Комментарий</span>
+                            <textarea class="modal-contact-message" name="user_message" placeholder="Введите текст"></textarea>
+                        </label>
+                    </li>
+                </ul>
 
-                <label class="modal-contact-field">
-                    <span class="modal-contact-field-type">Комментарий</span>
-                    <textarea class="modal-contact-message" name="user_message" placeholder="Введите текст"></textarea>
-                </label>
 
                 <input type="checkbox" class="modal-contact-field-policy-checkbox visuali-hidden" name="user_policy_agreement" id="user_policy" required>
                 <label for="user_policy" class="modal-contact-field-policy">Соглашаюсь с рассылкой и принимаю &nbsp<a class="terms-of-an-agreement" href="">Условия договора</a></label>
